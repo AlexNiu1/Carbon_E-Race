@@ -1,6 +1,7 @@
 package com.example.carbone_raceapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -26,6 +27,7 @@ public class Food extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
+        SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
         ImageView homebutton = findViewById(R.id.home);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
