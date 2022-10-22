@@ -39,13 +39,10 @@
         tools:layout_editor_absoluteY="506dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/ralenemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="ralenk@cs.washington.edu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alexemail" />
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="356dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
