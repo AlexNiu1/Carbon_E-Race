@@ -6,4 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
+    <TextView
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support:"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/settingstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/alexemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alexniu@cs.washington.edu"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/AboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About:"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="506dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
