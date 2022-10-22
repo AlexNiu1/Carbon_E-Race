@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -49,42 +50,38 @@ public class MainActivity extends AppCompatActivity {
             }
             Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+            List<Address> addresses = null;
+            addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
             editor.putInt("zipcode", Integer.parseInt(addresses.get(0).getPostalCode()));
             editor.apply();
         }
         ImageView homebutton = findViewById(R.id.home);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
         ImageView foodbutton = findViewById(R.id.food);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
                 startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
         ImageView transportationbutton = findViewById(R.id.transportation);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
                 startActivity(new Intent(MainActivity.this, Transportation.class));
             }
         });
         ImageView boardbutton = findViewById(R.id.leaderboard);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
                 startActivity(new Intent(MainActivity.this, Leaderboard.class));
             }
         });
         ImageView settingsbutton = findViewById(R.id.settings);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });

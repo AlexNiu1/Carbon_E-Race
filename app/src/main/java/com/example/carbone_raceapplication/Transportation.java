@@ -18,36 +18,31 @@ public class Transportation extends AppCompatActivity {
         ImageView homebutton = findViewById(R.id.home);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
+                startActivity(new Intent(Transportation.this, MainActivity.class));
             }
         });
         ImageView foodbutton = findViewById(R.id.food);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
-                startActivity(new Intent(MainActivity.this, Food.class));
+                startActivity(new Intent(Transportation.this, Food.class));
             }
         });
         ImageView transportationbutton = findViewById(R.id.transportation);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
-                startActivity(new Intent(MainActivity.this, Transportation.class));
+                startActivity(new Intent(Transportation.this, Transportation.class));
             }
         });
         ImageView boardbutton = findViewById(R.id.leaderboard);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
-                startActivity(new Intent(MainActivity.this, Leaderboard.class));
+                startActivity(new Intent(Transportation.this, Leaderboard.class));
             }
         });
         ImageView settingsbutton = findViewById(R.id.settings);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                // start the game
-                startActivity(new Intent(MainActivity.this, Settings.class));
+                startActivity(new Intent(Transportation.this, Settings.class));
             }
         });
     }
