@@ -22,23 +22,18 @@ public class Leaderboard extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
         String league = prefs.getString("league", null);
         if (league == null){
-            findViewById(R.id.leaguesize).setEnabled(false);
             findViewById(R.id.leaveleague).setEnabled(false);
             findViewById(R.id.leaveleague).setVisibility(View.INVISIBLE);
         }
         else {
             EditText room = findViewById(R.id.room);
             room.setText("League: " + league);
-            EditText size = findViewById(R.id.leaguesize);
-            size.setText("League size: 5");
             findViewById(R.id.leaguename).setEnabled(false);
             findViewById(R.id.leaguename).setVisibility(View.INVISIBLE);
             findViewById(R.id.createleague).setEnabled(false);
             findViewById(R.id.createleague).setVisibility(View.INVISIBLE);
             findViewById(R.id.joinleague).setEnabled(false);
             findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
-            findViewById(R.id.notinleague).setEnabled(false);
-            findViewById(R.id.notinleague).setVisibility(View.INVISIBLE);
             ArrayList<Double> al = new ArrayList<>();
             ArrayList<String> arr = new ArrayList<>();
             al.add(13.3);
@@ -68,18 +63,18 @@ public class Leaderboard extends AppCompatActivity {
             TextView three = findViewById(R.id.thirdplace);
             TextView four = findViewById(R.id.fourthplace);
             TextView five = findViewById(R.id.fifthplace);
-            one.setText("1st place: " + arr.get(0) + " with a footprint of " + al.get(0));
-            two.setText("2nd place: " + arr.get(1) + " with a footprint of " + al.get(1));
-            three.setText("3rd place: " + arr.get(2) + " with a footprint of " + al.get(2));
-            four.setText("4th place: " + arr.get(3) + " with a footprint of " + al.get(3));
-            five.setText("5th place: " + arr.get(4) + " with a footprint of " + al.get(4));
+            one.setText("1st: " + arr.get(0) + " , " + al.get(0));
+            two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
+            three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
+            four.setText("4th: " + arr.get(3) + " , " + al.get(3));
+            five.setText("5th: " + arr.get(4) + " , " + al.get(4));
         }
         Button createleague = findViewById(R.id.createleague);
         createleague.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 EditText name = findViewById(R.id.leaguename);
                 String newleague = name.getText().toString();
-                if (!newleague.matches("[a-zA-Z0-9]*") || prefs.getString("leagues", "").contains(newleague)){
+                if (!newleague.matches("[a-zA-Z0-9]*")){
                     name.setText("Error: League name is either not valid or already in use");
                 }
                 else {
@@ -88,10 +83,6 @@ public class Leaderboard extends AppCompatActivity {
                     editor.apply();
                     EditText room = findViewById(R.id.room);
                     room.setText("League: " + newleague);
-                    findViewById(R.id.leaguesize).setEnabled(true);
-                    findViewById(R.id.leaguesize).setVisibility(View.VISIBLE);
-                    EditText size = findViewById(R.id.leaguesize);
-                    size.setText("League size: 5");
                     findViewById(R.id.leaveleague).setEnabled(true);
                     findViewById(R.id.leaveleague).setVisibility(View.VISIBLE);
                     findViewById(R.id.leaguename).setEnabled(false);
@@ -100,8 +91,6 @@ public class Leaderboard extends AppCompatActivity {
                     findViewById(R.id.createleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.joinleague).setEnabled(false);
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
-                    findViewById(R.id.notinleague).setEnabled(false);
-                    findViewById(R.id.notinleague).setVisibility(View.INVISIBLE);
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
                     al.add(13.3);
@@ -131,11 +120,11 @@ public class Leaderboard extends AppCompatActivity {
                     TextView three = findViewById(R.id.thirdplace);
                     TextView four = findViewById(R.id.fourthplace);
                     TextView five = findViewById(R.id.fifthplace);
-                    one.setText("1st place: " + arr.get(0) + " with a footprint of " + al.get(0));
-                    two.setText("2nd place: " + arr.get(1) + " with a footprint of " + al.get(1));
-                    three.setText("3rd place: " + arr.get(2) + " with a footprint of " + al.get(2));
-                    four.setText("4th place: " + arr.get(3) + " with a footprint of " + al.get(3));
-                    five.setText("5th place: " + arr.get(4) + " with a footprint of " + al.get(4));
+                    one.setText("1st: " + arr.get(0) + " , " + al.get(0));
+                    two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
+                    three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
+                    four.setText("4th: " + arr.get(3) + " , " + al.get(3));
+                    five.setText("5th: " + arr.get(4) + " , " + al.get(4));
                 }
             }
         });
@@ -153,10 +142,6 @@ public class Leaderboard extends AppCompatActivity {
                     editor.apply();
                     EditText room = findViewById(R.id.room);
                     room.setText("League: " + newleague);
-                    findViewById(R.id.leaguesize).setEnabled(true);
-                    findViewById(R.id.leaguesize).setVisibility(View.VISIBLE);
-                    EditText size = findViewById(R.id.leaguesize);
-                    size.setText("League size: 5");
                     findViewById(R.id.leaveleague).setEnabled(true);
                     findViewById(R.id.leaveleague).setVisibility(View.VISIBLE);
                     findViewById(R.id.leaguename).setEnabled(false);
@@ -165,8 +150,6 @@ public class Leaderboard extends AppCompatActivity {
                     findViewById(R.id.createleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.joinleague).setEnabled(false);
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
-                    findViewById(R.id.notinleague).setEnabled(false);
-                    findViewById(R.id.notinleague).setVisibility(View.INVISIBLE);
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
                     al.add(13.3);
@@ -196,11 +179,11 @@ public class Leaderboard extends AppCompatActivity {
                     TextView three = findViewById(R.id.thirdplace);
                     TextView four = findViewById(R.id.fourthplace);
                     TextView five = findViewById(R.id.fifthplace);
-                    one.setText("1st place: " + arr.get(0) + " with a footprint of " + al.get(0));
-                    two.setText("2nd place: " + arr.get(1) + " with a footprint of " + al.get(1));
-                    three.setText("3rd place: " + arr.get(2) + " with a footprint of " + al.get(2));
-                    four.setText("4th place: " + arr.get(3) + " with a footprint of " + al.get(3));
-                    five.setText("5th place: " + arr.get(4) + " with a footprint of " + al.get(4));
+                    one.setText("1st: " + arr.get(0) + " , " + al.get(0));
+                    two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
+                    three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
+                    four.setText("4th: " + arr.get(3) + " , " + al.get(3));
+                    five.setText("5th: " + arr.get(4) + " , " + al.get(4));
                 }
             }
         });
@@ -212,8 +195,6 @@ public class Leaderboard extends AppCompatActivity {
                 editor.apply();
                 EditText room = findViewById(R.id.room);
                 room.setText("League: none");
-                findViewById(R.id.leaguesize).setEnabled(false);
-                findViewById(R.id.leaguesize).setVisibility(View.INVISIBLE);
                 findViewById(R.id.leaveleague).setEnabled(false);
                 findViewById(R.id.leaveleague).setVisibility(View.INVISIBLE);
                 findViewById(R.id.leaguename).setEnabled(true);
@@ -222,8 +203,6 @@ public class Leaderboard extends AppCompatActivity {
                 findViewById(R.id.createleague).setVisibility(View.VISIBLE);
                 findViewById(R.id.joinleague).setEnabled(true);
                 findViewById(R.id.joinleague).setVisibility(View.VISIBLE);
-                findViewById(R.id.notinleague).setEnabled(true);
-                findViewById(R.id.notinleague).setVisibility(View.VISIBLE);
                 TextView one = findViewById(R.id.firstplace);
                 TextView two = findViewById(R.id.secondplace);
                 TextView three = findViewById(R.id.thirdplace);
