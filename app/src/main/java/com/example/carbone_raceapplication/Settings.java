@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,37 +20,39 @@ public class Settings extends AppCompatActivity {
         EditText username = findViewById(R.id.userusername);
         username.setText(prefs.getString("username", ""));
         Button updateusername = findViewById(R.id.UpdateUsername);
-        updateusername.setOnClickListener(new View.OnClickListener(){
+        updateusername.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString("username", username.getText().toString());
             }
         });
-        ImageView homebutton = findViewById(R.id.home);
+        Button homebutton = findViewById(R.id.homeButton);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, MainActivity.class));
             }
         });
-        ImageView foodbutton = findViewById(R.id.food);
+        Button foodbutton = findViewById(R.id.foodButton);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Food.class));
             }
         });
-        ImageView transportationbutton = findViewById(R.id.transportation);
+        Button transportationbutton = findViewById(R.id.transportationButton);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Transportation.class));
             }
         });
-        ImageView boardbutton = findViewById(R.id.leaderboard);
+        Button boardbutton = findViewById(R.id.leaderboardButton);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Leaderboard.class));
             }
         });
-        ImageView settingsbutton = findViewById(R.id.settings);
+
+
+        Button settingsbutton = findViewById(R.id.settingsButton);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Settings.class));
