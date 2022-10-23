@@ -24,9 +24,9 @@ public class Leaderboard extends AppCompatActivity {
             findViewById(R.id.leaveleague).setEnabled(false);
             findViewById(R.id.leaveleague).setVisibility(View.INVISIBLE);
         }
-        else{
+        else {
             EditText room = findViewById(R.id.room);
-            room.setText("Your current league: " + league);
+            room.setText("League: " + league);
             EditText size = findViewById(R.id.leaguesize);
             size.setText("League size: 5");
             findViewById(R.id.leaguename).setEnabled(false);
@@ -34,7 +34,6 @@ public class Leaderboard extends AppCompatActivity {
             findViewById(R.id.joinleague).setEnabled(false);
             findViewById(R.id.notinleague).setEnabled(false);
         }
-        int size = 0;
         Button createleague = findViewById(R.id.createleague);
         createleague.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
@@ -48,18 +47,21 @@ public class Leaderboard extends AppCompatActivity {
                     editor.putString("leagues", prefs.getString("leagues", "") + newleague + ",");
                     editor.apply();
                     EditText room = findViewById(R.id.room);
-                    room.setText("Your current league: " + newleague);
+                    room.setText("League: " + newleague);
                     findViewById(R.id.leaguesize).setEnabled(true);
+                    findViewById(R.id.leaguesize).setVisibility(View.VISIBLE);
                     EditText size = findViewById(R.id.leaguesize);
                     size.setText("League size: 5");
                     findViewById(R.id.leaveleague).setEnabled(true);
                     findViewById(R.id.leaveleague).setVisibility(View.VISIBLE);
                     findViewById(R.id.leaguename).setEnabled(false);
+                    findViewById(R.id.leaguename).setVisibility(View.INVISIBLE);
                     findViewById(R.id.createleague).setEnabled(false);
                     findViewById(R.id.createleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.joinleague).setEnabled(false);
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.notinleague).setEnabled(false);
+                    findViewById(R.id.notinleague).setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -76,18 +78,21 @@ public class Leaderboard extends AppCompatActivity {
                     editor.putString("leagues", prefs.getString("leagues", "") + newleague + ",");
                     editor.apply();
                     EditText room = findViewById(R.id.room);
-                    room.setText("Your current league: " + newleague);
+                    room.setText("League: " + newleague);
                     findViewById(R.id.leaguesize).setEnabled(true);
+                    findViewById(R.id.leaguesize).setVisibility(View.VISIBLE);
                     EditText size = findViewById(R.id.leaguesize);
                     size.setText("League size: 5");
                     findViewById(R.id.leaveleague).setEnabled(true);
                     findViewById(R.id.leaveleague).setVisibility(View.VISIBLE);
                     findViewById(R.id.leaguename).setEnabled(false);
+                    findViewById(R.id.leaguename).setVisibility(View.INVISIBLE);
                     findViewById(R.id.createleague).setEnabled(false);
                     findViewById(R.id.createleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.joinleague).setEnabled(false);
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
                     findViewById(R.id.notinleague).setEnabled(false);
+                    findViewById(R.id.notinleague).setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -98,16 +103,19 @@ public class Leaderboard extends AppCompatActivity {
                 editor.putString("league", null);
                 editor.apply();
                 EditText room = findViewById(R.id.room);
-                room.setText("Your current league: none");
+                room.setText("League: none");
                 findViewById(R.id.leaguesize).setEnabled(false);
+                findViewById(R.id.leaguesize).setVisibility(View.INVISIBLE);
                 findViewById(R.id.leaveleague).setEnabled(false);
                 findViewById(R.id.leaveleague).setVisibility(View.INVISIBLE);
                 findViewById(R.id.leaguename).setEnabled(true);
+                findViewById(R.id.leaguename).setVisibility(View.VISIBLE);
                 findViewById(R.id.createleague).setEnabled(true);
                 findViewById(R.id.createleague).setVisibility(View.VISIBLE);
                 findViewById(R.id.joinleague).setEnabled(true);
                 findViewById(R.id.joinleague).setVisibility(View.VISIBLE);
                 findViewById(R.id.notinleague).setEnabled(true);
+                findViewById(R.id.notinleague).setVisibility(View.VISIBLE);
             }
         });
         Button homebutton = findViewById(R.id.homeButton);
