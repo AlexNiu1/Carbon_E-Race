@@ -45,9 +45,9 @@ public class Food extends AppCompatActivity {
         map.put("Seafood", 0.24);
         map.put("Rice", 0.19);
         map.put("Beans", 0.16);
-        map.put("Lettuce", 0.071);
-        map.put("Tomato", 0.063);
-        map.put("Other Veggies", 0.057);
+        map.put("Lettuce", 0.07);
+        map.put("Tomato", 0.06);
+        map.put("Other Veggies", 0.05);
         Button submitbutton = findViewById(R.id.submit);
         submitbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {

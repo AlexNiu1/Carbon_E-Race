@@ -31,16 +31,10 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String today = formatter.format(date);
 
+
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         final TextView footPrintScore = findViewById(R.id.carbonfootstepscore);
         Button refresh = (Button) findViewById(R.id.refresh);
-
-        if (currentday == null || !currentday.equals(today)) {
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putLong("footprint", 0);
-            editor.putString("currentday", currentday);
-            editor.apply();
-        }
         Button refresher = findViewById(R.id.refresh);
         refresh.setOnClickListener(new View.OnClickListener(){
             @Override

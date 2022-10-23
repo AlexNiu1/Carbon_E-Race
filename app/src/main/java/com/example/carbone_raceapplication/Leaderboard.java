@@ -38,15 +38,16 @@ public class Leaderboard extends AppCompatActivity {
             findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
             ArrayList<Double> al = new ArrayList<>();
             ArrayList<String> arr = new ArrayList<>();
-            al.add(13.3);
-            al.add(22.9);
-            al.add(78.1);
-            al.add(125.0);
+            al.add(8.3);
+            al.add(12.9);
+            al.add(28.1);
+            al.add(46.0);
             arr.add("andrewwu");
             arr.add("alexniu");
             arr.add("kevinwu");
             arr.add("ralenkovara");
             double score = Double.longBitsToDouble(prefs.getLong("footprint", 0));
+            score = Math.round(score * 100.0) / 100.0;
             boolean bool = true;
             for (int i = 0; i < al.size(); i++){
                 if (score <= al.get(i)){
@@ -97,15 +98,16 @@ public class Leaderboard extends AppCompatActivity {
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
-                    al.add(13.3);
-                    al.add(22.9);
-                    al.add(78.1);
-                    al.add(125.0);
+                    al.add(8.3);
+                    al.add(12.9);
+                    al.add(28.1);
+                    al.add(46.0);
                     arr.add("andrewwu");
                     arr.add("alexniu");
                     arr.add("kevinwu");
                     arr.add("ralenkovara");
                     double score = Double.longBitsToDouble(prefs.getLong("footprint", 0));
+                    score = Math.round(score * 100.0) / 100.0;
                     boolean bool = true;
                     for (int i = 0; i < al.size(); i++){
                         if (score <= al.get(i)){
@@ -156,15 +158,16 @@ public class Leaderboard extends AppCompatActivity {
                     findViewById(R.id.joinleague).setVisibility(View.INVISIBLE);
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
-                    al.add(13.3);
-                    al.add(22.9);
-                    al.add(78.1);
-                    al.add(125.0);
+                    al.add(8.3);
+                    al.add(12.9);
+                    al.add(28.1);
+                    al.add(46.0);
                     arr.add("andrewwu");
                     arr.add("alexniu");
                     arr.add("kevinwu");
                     arr.add("ralenkovara");
                     double score = Double.longBitsToDouble(prefs.getLong("footprint", 0));
+                    score = Math.round(score * 100.0) / 100.0;
                     boolean bool = true;
                     for (int i = 0; i < al.size(); i++){
                         if (score <= al.get(i)){
