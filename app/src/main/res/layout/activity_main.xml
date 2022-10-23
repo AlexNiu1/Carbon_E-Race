@@ -79,7 +79,11 @@
         tools:layout_editor_absoluteX="153dp" />
 
     <TextView
+<<<<<<< HEAD
+        android:id="@+id/textView"
+=======
         android:id="@+id/homeTitle"
+>>>>>>> ac3dd9f25dd6553c0dfe76642c9aaf3d1acef01f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
@@ -89,6 +93,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+<<<<<<< HEAD
+        android:id="@+id/mapsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="open maps activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+=======
         android:id="@+id/foodButton1"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="103.8dp"
@@ -102,5 +118,6 @@
         app:layout_constraintTop_toBottomOf="@+id/homeButton1"
         app:rippleColor="#00FFFFFF"
         tools:layout_editor_absoluteX="153dp" />
+>>>>>>> ac3dd9f25dd6553c0dfe76642c9aaf3d1acef01f
 
 </androidx.constraintlayout.widget.ConstraintLayout>
