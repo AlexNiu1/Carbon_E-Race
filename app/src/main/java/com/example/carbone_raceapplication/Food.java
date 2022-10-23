@@ -9,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.navigation.NavController;
@@ -22,43 +23,42 @@ public class Food extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityFoodBinding binding;
-/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
-        ImageView homebutton = findViewById(R.id.home);
+        Button homebutton = findViewById(R.id.homeButton);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, MainActivity.class));
             }
         });
-        ImageView foodbutton = findViewById(R.id.food);
+        Button foodbutton = findViewById(R.id.foodButton);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Food.class));
             }
         });
-        ImageView transportationbutton = findViewById(R.id.transportation);
+        Button transportationbutton = findViewById(R.id.transportationButton);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Transportation.class));
             }
         });
-        ImageView boardbutton = findViewById(R.id.leaderboard);
+        Button boardbutton = findViewById(R.id.leaderboardButton);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Leaderboard.class));
             }
         });
-        ImageView settingsbutton = findViewById(R.id.settings);
+
+
+        Button settingsbutton = findViewById(R.id.settingsButton);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Settings.class));
             }
         });
     }
-
- */
 }

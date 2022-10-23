@@ -6,46 +6,46 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Transportation extends AppCompatActivity {
-/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transportation);
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
-        ImageView homebutton = findViewById(R.id.home);
+        Button homebutton = findViewById(R.id.homeButton);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Transportation.this, MainActivity.class));
             }
         });
-        ImageView foodbutton = findViewById(R.id.food);
+        Button foodbutton = findViewById(R.id.foodButton);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Transportation.this, Food.class));
             }
         });
-        ImageView transportationbutton = findViewById(R.id.transportation);
+        Button transportationbutton = findViewById(R.id.transportationButton);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Transportation.this, Transportation.class));
             }
         });
-        ImageView boardbutton = findViewById(R.id.leaderboard);
+        Button boardbutton = findViewById(R.id.leaderboardButton);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Transportation.this, Leaderboard.class));
             }
         });
-        ImageView settingsbutton = findViewById(R.id.settings);
+
+
+        Button settingsbutton = findViewById(R.id.settingsButton);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Transportation.this, Settings.class));
             }
         });
     }
-
- */
 }
