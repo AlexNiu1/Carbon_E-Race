@@ -42,19 +42,6 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("currentday", currentday);
             editor.apply();
         }
-        if (prefs.getInt("zipcode", 0) == 0) {
-            SharedPreferences.Editor editor = prefs.edit();
-            LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                return;
-            }
-            Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-            List<Address> addresses = null;
-            addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            editor.putInt("zipcode", Integer.parseInt(addresses.get(0).getPostalCode()));
-            editor.apply();
-        }
         ImageView homebutton = findViewById(R.id.home);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
