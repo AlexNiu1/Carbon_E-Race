@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Transportation extends AppCompatActivity {
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,4 +46,6 @@ public class Transportation extends AppCompatActivity {
             }
         });
     }
+
+ */
 }
