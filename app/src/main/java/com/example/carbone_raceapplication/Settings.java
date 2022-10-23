@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
     @Override
@@ -26,25 +24,26 @@ public class Settings extends AppCompatActivity {
                 editor.putString("username", username.getText().toString());
             }
         });
-        Button homebutton = findViewById(R.id.homeButton);
+
+        Button homebutton = findViewById(R.id.homeButton5);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, MainActivity.class));
             }
         });
-        Button foodbutton = findViewById(R.id.foodButton);
+        Button foodbutton = findViewById(R.id.foodButton5);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Food.class));
             }
         });
-        Button transportationbutton = findViewById(R.id.transportationButton);
+        Button transportationbutton = findViewById(R.id.travelButton5);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Transportation.class));
             }
         });
-        Button boardbutton = findViewById(R.id.leaderboardButton);
+        Button boardbutton = findViewById(R.id.rankButton5);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Leaderboard.class));
@@ -52,11 +51,12 @@ public class Settings extends AppCompatActivity {
         });
 
 
-        Button settingsbutton = findViewById(R.id.settingsButton);
+        Button settingsbutton = findViewById(R.id.settingsButton5);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Settings.this, Settings.class));
             }
         });
+
     }
 }

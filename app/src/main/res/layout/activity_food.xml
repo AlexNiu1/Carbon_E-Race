@@ -10,85 +10,90 @@
     app:layoutDescription="@xml/activity_food_scene2"
     tools:context=".Food">
 
-    <Button
-        android:id="@+id/homeButton2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_home_24"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/foodTitle"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/settingsButton2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_settings_24"
-        android:text="Settings"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/rankButton2"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/homeButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/rankButton2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_leaderboard_24"
-        android:text="rank"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/travelButton2"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/foodButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            android:text="Food"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/travelButton2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_directions_car_24"
-        android:text="Travel"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/foodButton2"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/travelButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_directions_car_24"
+            android:text="Travel"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/foodButton2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_fastfood_24"
-        android:text="Food"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/homeButton2"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/rankButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_leaderboard_24"
+            android:text="rank"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/settingsButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
+            android:text="Setting"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/carbonTitle"
@@ -102,37 +107,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:background="#ECECEC"
-        android:backgroundTint="#ECECEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:layout_width="561dp"
-        android:layout_height="76dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1537dp" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ECECEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/foodTitle"

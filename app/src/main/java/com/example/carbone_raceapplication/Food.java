@@ -28,25 +28,25 @@ public class Food extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
-        Button homebutton = findViewById(R.id.homeButton);
+        Button homebutton = findViewById(R.id.homeButton2);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, MainActivity.class));
             }
         });
-        Button foodbutton = findViewById(R.id.foodButton);
+        Button foodbutton = findViewById(R.id.foodButton2);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Food.class));
             }
         });
-        Button transportationbutton = findViewById(R.id.transportationButton);
+        Button transportationbutton = findViewById(R.id.travelButton2);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Transportation.class));
             }
         });
-        Button boardbutton = findViewById(R.id.leaderboardButton);
+        Button boardbutton = findViewById(R.id.rankButton2);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Leaderboard.class));
@@ -54,7 +54,7 @@ public class Food extends AppCompatActivity {
         });
 
 
-        Button settingsbutton = findViewById(R.id.settingsButton);
+        Button settingsbutton = findViewById(R.id.settingsButton2);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(Food.this, Settings.class));
