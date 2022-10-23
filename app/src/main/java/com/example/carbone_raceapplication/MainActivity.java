@@ -14,6 +14,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
@@ -42,44 +43,34 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("currentday", currentday);
             editor.apply();
         }
-        if (prefs.getInt("zipcode", 0) == 0) {
-            SharedPreferences.Editor editor = prefs.edit();
-            LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                return;
-            }
-            Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-            List<Address> addresses = null;
-            addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            editor.putInt("zipcode", Integer.parseInt(addresses.get(0).getPostalCode()));
-            editor.apply();
-        }
-        ImageView homebutton = findViewById(R.id.home);
+
+        Button homebutton = findViewById(R.id.homeButton);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
-        ImageView foodbutton = findViewById(R.id.food);
+        Button foodbutton = findViewById(R.id.foodButton);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
-        ImageView transportationbutton = findViewById(R.id.transportation);
+        Button transportationbutton = findViewById(R.id.transportationButton);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Transportation.class));
             }
         });
-        ImageView boardbutton = findViewById(R.id.leaderboard);
+        Button boardbutton = findViewById(R.id.leaderboardButton);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Leaderboard.class));
             }
         });
-        ImageView settingsbutton = findViewById(R.id.settings);
+
+
+        Button settingsbutton = findViewById(R.id.settingsButton);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Settings.class));
