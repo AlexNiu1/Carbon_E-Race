@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openMapsActivity() {
+    /* public void openMapsActivity() {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
-    }
+    }*/
 }
