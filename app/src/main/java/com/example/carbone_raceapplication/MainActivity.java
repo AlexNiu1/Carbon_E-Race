@@ -14,6 +14,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
@@ -25,12 +26,22 @@ import java.util.Locale;
 import java.util.TreeMap;
 
 public class MainActivity extends AppCompatActivity {
+    private Button mapsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
+
+        mapsButton = (Button) findViewById(R.id.mapsbutton);
+        mapsButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                openMapsActivity();
+            }
+        });
+
+        /*
         double footprint = Double.longBitsToDouble(prefs.getLong("footprint", 0));
         String currentday = prefs.getString("currentday", null);
         Date date = Calendar.getInstance().getTime();
@@ -71,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
-        });
+        }); */
+    }
+
+    public void openMapsActivity() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 }
