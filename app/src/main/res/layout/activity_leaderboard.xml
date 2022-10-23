@@ -93,36 +93,42 @@
 
     <TextView
         android:id="@+id/fifthplace"
-        android:layout_width="295dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fourthplace" />
 
     <TextView
         android:id="@+id/fourthplace"
-        android:layout_width="294dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thirdplace" />
 
     <TextView
         android:id="@+id/thirdplace"
-        android:layout_width="290dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#cd7f32"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondplace" />
 
     <TextView
         android:id="@+id/secondplace"
-        android:layout_width="289dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#aaa9ad"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstplace" />
@@ -131,7 +137,7 @@
         android:id="@+id/room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="League: None"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +148,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#72D672"
         android:text="Start"
         app:layout_constraintEnd_toStartOf="@+id/leaveleague"
         app:layout_constraintTop_toBottomOf="@+id/leaguename" />
@@ -154,6 +161,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="24dp"
         android:text="Join"
+        android:backgroundTint="#72D672"
         app:layout_constraintStart_toEndOf="@+id/leaveleague"
         app:layout_constraintTop_toBottomOf="@+id/leaguename" />
 
@@ -172,14 +180,15 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/room"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/boardtext"
-        android:layout_width="104dp"
+        android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
-        android:text="Leaderboard:"
+        android:text="Leaderboard"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/leaveleague" />
@@ -188,21 +197,36 @@
         android:id="@+id/leaveleague"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="36dp"
+        android:backgroundTint="#72D672"
         android:text="Leave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/room" />
 
     <TextView
         android:id="@+id/firstplace"
         android:layout_width="286dp"
-        android:layout_height="23dp"
+        android:layout_height="22dp"
         android:layout_marginTop="16dp"
+        android:textColor="#d4af37"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boardtext" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error: League name is either not valid or already in use"
+        android:textColor="#CC0202"
+        android:drawableLeft="@drawable/ic_baseline_error_outline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaguename"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
