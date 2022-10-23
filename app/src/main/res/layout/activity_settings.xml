@@ -39,7 +39,7 @@
         tools:layout_editor_absoluteY="506dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/ralenemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -84,4 +84,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/username"
         app:layout_constraintTop_toBottomOf="@+id/settingstext" />
+
+    <TextView
+        android:id="@+id/kevinemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kwu2004@cs.washington.edu"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/andrewemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="andrew64@cs.washington.edu"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="412dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
