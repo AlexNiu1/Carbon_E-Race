@@ -79,7 +79,7 @@ public class Leaderboard extends AppCompatActivity {
                 }
                 else {
                     SharedPreferences.Editor editor = prefs.edit();
-                    editor.putString("leagues", prefs.getString("leagues", "") + newleague + ",");
+                    editor.putString("league", newleague);
                     editor.apply();
                     EditText room = findViewById(R.id.room);
                     room.setText("League: " + newleague);
@@ -138,7 +138,7 @@ public class Leaderboard extends AppCompatActivity {
                 }
                 else{
                     SharedPreferences.Editor editor = prefs.edit();
-                    editor.putString("leagues", prefs.getString("leagues", "") + newleague + ",");
+                    editor.putString("league", newleague);
                     editor.apply();
                     EditText room = findViewById(R.id.room);
                     room.setText("League: " + newleague);
