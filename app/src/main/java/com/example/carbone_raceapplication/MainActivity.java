@@ -20,15 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
-
-        mapsButton = (Button) findViewById(R.id.mapsbutton);
-        mapsButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view) {
-                openMapsActivity();
-            }
-        });
-
-        /*
         double footprint = Double.longBitsToDouble(prefs.getLong("footprint", 0));
         String currentday = prefs.getString("currentday", null);
         Date date = Calendar.getInstance().getTime();
@@ -53,26 +44,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
-        Button transportationbutton = findViewById(R.id.travelButton1);
-        transportationbutton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Transportation.class));
-            }
-        });
         Button boardbutton = findViewById(R.id.rankButton1);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Leaderboard.class));
             }
         });
-
+        Button transportationbutton = findViewById(R.id.travelButton1);
+        transportationbutton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Transportation.class));
+            }
+        });
 
         Button settingsbutton = findViewById(R.id.settingsButton1);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
-        }); */
+        });
     }
 
     public void openMapsActivity() {

@@ -6,118 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ECECEC"
+        android:layout_height="70dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <Button
+            android:id="@+id/homeButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/homeButton1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_home_24"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/homeTitle"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/foodButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            android:text="Food"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/settingsButton1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_settings_24"
-        android:text="Settings"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/rankButton1"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/travelButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_directions_car_24"
+            android:text="Travel"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/rankButton1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_leaderboard_24"
-        android:text="rank"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/travelButton1"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
+        <Button
+            android:id="@+id/rankButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_leaderboard_24"
+            android:text="rank"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
 
-    <Button
-        android:id="@+id/travelButton1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_directions_car_24"
-        android:text="Travel"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/foodButton1"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
-
-    <TextView
-<<<<<<< HEAD
-        android:id="@+id/textView"
-=======
-        android:id="@+id/homeTitle"
->>>>>>> ac3dd9f25dd6553c0dfe76642c9aaf3d1acef01f
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-<<<<<<< HEAD
-        android:id="@+id/mapsbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:text="open maps activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-=======
-        android:id="@+id/foodButton1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="103.8dp"
-        android:layout_height="74dp"
-        android:backgroundTint="#D3D3D3"
-        android:drawableTop="@drawable/ic_baseline_fastfood_24"
-        android:text="Food"
-        android:textAlignment="center"
-        android:textColor="#949494"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/homeButton1"
-        app:rippleColor="#00FFFFFF"
-        tools:layout_editor_absoluteX="153dp" />
->>>>>>> ac3dd9f25dd6553c0dfe76642c9aaf3d1acef01f
+        <Button
+            android:id="@+id/settingsButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D3D3D3"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
+            android:text="Setting"
+            android:textAlignment="center"
+            android:textColor="#949494"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:rippleColor="#00FFFFFF" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
