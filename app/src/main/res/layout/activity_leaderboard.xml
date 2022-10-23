@@ -80,10 +80,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_leaderboard_24"
+            android:drawableTop="@drawable/ic_baseline_leaderboard_24_green"
             android:text="rank"
             android:textAlignment="center"
-            android:textColor="#949494"
+            android:textColor="#72D672"
             android:textSize="10sp"
             android:textStyle="bold"
             app:rippleColor="#00FFFFFF" />
