@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import java.util.Random;
 
 public class Leaderboard extends AppCompatActivity {
-/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -138,6 +137,4 @@ public class Leaderboard extends AppCompatActivity {
             }
         });
     }
-
- */
 }
