@@ -42,10 +42,10 @@
 
     <TextView
         android:id="@+id/text_distance"
-        android:layout_width="175dp"
-        android:layout_height="85dp"
+        android:layout_width="344dp"
+        android:layout_height="149dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="380dp"
         android:gravity="center"
         android:textColor="@color/black"
