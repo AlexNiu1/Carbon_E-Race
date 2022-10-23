@@ -6,6 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".Leaderboard">
 
+    <TextView
+        android:id="@+id/sixthplace"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthplace" />
+
+    <TextView
+        android:id="@+id/seventhplace"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="104dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthplace" />
+
+    <TextView
+        android:id="@+id/eighthplace"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="148dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthplace" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"

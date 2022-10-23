@@ -39,10 +39,16 @@ public class Leaderboard extends AppCompatActivity {
             ArrayList<Double> al = new ArrayList<>();
             ArrayList<String> arr = new ArrayList<>();
             al.add(8.3);
+            al.add(11.1);
             al.add(12.9);
             al.add(28.1);
+            al.add(37.1);
             al.add(46.0);
+            al.add(52.1);
             arr.add("andrewwu");
+            arr.add("meganyi");
+            arr.add("eyoelgebre");
+            arr.add("aliyanmuhammad");
             arr.add("alexniu");
             arr.add("kevinwu");
             arr.add("ralenkovara");
@@ -66,11 +72,17 @@ public class Leaderboard extends AppCompatActivity {
             TextView three = findViewById(R.id.thirdplace);
             TextView four = findViewById(R.id.fourthplace);
             TextView five = findViewById(R.id.fifthplace);
+            TextView six = findViewById(R.id.sixthplace);
+            TextView seven = findViewById(R.id.seventhplace);
+            TextView eight = findViewById(R.id.eighthplace);
             one.setText("1st: " + arr.get(0) + " , " + al.get(0));
             two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
             three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
             four.setText("4th: " + arr.get(3) + " , " + al.get(3));
             five.setText("5th: " + arr.get(4) + " , " + al.get(4));
+            six.setText("6th: " + arr.get(5) + " , " + al.get(5));
+            seven.setText("7th: " + arr.get(6) + " , " + al.get(6));
+            eight.setText("8th: " + arr.get(7) + " , " + al.get(7));
         }
         Button createleague = findViewById(R.id.createleague);
         createleague.setOnClickListener(new View.OnClickListener(){
@@ -99,10 +111,16 @@ public class Leaderboard extends AppCompatActivity {
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
                     al.add(8.3);
+                    al.add(11.1);
                     al.add(12.9);
                     al.add(28.1);
+                    al.add(37.1);
                     al.add(46.0);
+                    al.add(52.1);
                     arr.add("andrewwu");
+                    arr.add("meganyi");
+                    arr.add("eyoelgebre");
+                    arr.add("aliyanmuhammad");
                     arr.add("alexniu");
                     arr.add("kevinwu");
                     arr.add("ralenkovara");
@@ -126,11 +144,17 @@ public class Leaderboard extends AppCompatActivity {
                     TextView three = findViewById(R.id.thirdplace);
                     TextView four = findViewById(R.id.fourthplace);
                     TextView five = findViewById(R.id.fifthplace);
-                    one.setText("1st: " + arr.get(0) + ", " + al.get(0));
-                    two.setText("2nd: " + arr.get(1) + ", " + al.get(1));
-                    three.setText("3rd: " + arr.get(2) + ", " + al.get(2));
-                    four.setText("4th: " + arr.get(3) + ", " + al.get(3));
-                    five.setText("5th: " + arr.get(4) + ", " + al.get(4));
+                    TextView six = findViewById(R.id.sixthplace);
+                    TextView seven = findViewById(R.id.seventhplace);
+                    TextView eight = findViewById(R.id.eighthplace);
+                    one.setText("1st: " + arr.get(0) + " , " + al.get(0));
+                    two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
+                    three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
+                    four.setText("4th: " + arr.get(3) + " , " + al.get(3));
+                    five.setText("5th: " + arr.get(4) + " , " + al.get(4));
+                    six.setText("6th: " + arr.get(5) + " , " + al.get(5));
+                    seven.setText("7th: " + arr.get(6) + " , " + al.get(6));
+                    eight.setText("8th: " + arr.get(7) + " , " + al.get(7));
                 }
             }
         });
@@ -159,10 +183,16 @@ public class Leaderboard extends AppCompatActivity {
                     ArrayList<Double> al = new ArrayList<>();
                     ArrayList<String> arr = new ArrayList<>();
                     al.add(8.3);
+                    al.add(11.1);
                     al.add(12.9);
                     al.add(28.1);
+                    al.add(37.1);
                     al.add(46.0);
+                    al.add(52.1);
                     arr.add("andrewwu");
+                    arr.add("meganyi");
+                    arr.add("eyoelgebre");
+                    arr.add("aliyanmuhammad");
                     arr.add("alexniu");
                     arr.add("kevinwu");
                     arr.add("ralenkovara");
@@ -186,11 +216,17 @@ public class Leaderboard extends AppCompatActivity {
                     TextView three = findViewById(R.id.thirdplace);
                     TextView four = findViewById(R.id.fourthplace);
                     TextView five = findViewById(R.id.fifthplace);
-                    one.setText("1st: " + arr.get(0) + ", " + al.get(0));
-                    two.setText("2nd: " + arr.get(1) + ", " + al.get(1));
-                    three.setText("3rd: " + arr.get(2) + ", " + al.get(2));
-                    four.setText("4th: " + arr.get(3) + ", " + al.get(3));
-                    five.setText("5th: " + arr.get(4) + ", " + al.get(4));
+                    TextView six = findViewById(R.id.sixthplace);
+                    TextView seven = findViewById(R.id.seventhplace);
+                    TextView eight = findViewById(R.id.eighthplace);
+                    one.setText("1st: " + arr.get(0) + " , " + al.get(0));
+                    two.setText("2nd: " + arr.get(1) + " , " + al.get(1));
+                    three.setText("3rd: " + arr.get(2) + " , " + al.get(2));
+                    four.setText("4th: " + arr.get(3) + " , " + al.get(3));
+                    five.setText("5th: " + arr.get(4) + " , " + al.get(4));
+                    six.setText("6th: " + arr.get(5) + " , " + al.get(5));
+                    seven.setText("7th: " + arr.get(6) + " , " + al.get(6));
+                    eight.setText("8th: " + arr.get(7) + " , " + al.get(7));
                 }
             }
         });
@@ -215,11 +251,17 @@ public class Leaderboard extends AppCompatActivity {
                 TextView three = findViewById(R.id.thirdplace);
                 TextView four = findViewById(R.id.fourthplace);
                 TextView five = findViewById(R.id.fifthplace);
+                TextView six = findViewById(R.id.sixthplace);
+                TextView seven = findViewById(R.id.seventhplace);
+                TextView eight = findViewById(R.id.eighthplace);
                 one.setText("");
                 two.setText("");
                 three.setText("");
                 four.setText("");
                 five.setText("");
+                six.setText("");
+                seven.setText("");
+                eight.setText("");
             }
         });
         Button homebutton = findViewById(R.id.homeButton4);
