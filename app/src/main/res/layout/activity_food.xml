@@ -14,78 +14,80 @@
         android:id="@+id/checkBox26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Rice"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox24" />
 
     <CheckBox
         android:id="@+id/checkBox23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Lettuce"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox28" />
 
     <CheckBox
         android:id="@+id/checkBox24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Veggie Patty"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox30" />
 
     <CheckBox
         android:id="@+id/checkBox25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-172dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="48dp"
         android:text="Other Veggies"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox27" />
 
     <CheckBox
         android:id="@+id/checkBox28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Beans"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox26" />
 
     <CheckBox
         android:id="@+id/checkBox29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-172dp"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="92dp"
         android:text="Yogurt"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Egg"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox29" />
 
     <CheckBox
         android:id="@+id/checkBox27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="-172dp"
+        android:layout_marginTop="4dp"
         android:text="Tomato"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox23" />
 
     <LinearLayout
@@ -191,11 +193,12 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="24dp"
+        android:backgroundTint="#72D672"
         android:text="Submit!"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox25"
         app:layout_constraintVertical_bias="0.0" />
@@ -204,70 +207,80 @@
         android:id="@+id/checkBox15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="96dp"
         android:text="Beef"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Chicken"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox15"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
 
     <CheckBox
         android:id="@+id/checkBox17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:text="Lamb"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox16"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox16" />
 
     <CheckBox
         android:id="@+id/checkBox18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Pork"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox17"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
 
     <CheckBox
         android:id="@+id/checkBox19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Cheese"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox18"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox18" />
 
     <CheckBox
         android:id="@+id/checkBox20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Shrimp"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox19"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox19" />
 
     <CheckBox
         android:id="@+id/checkBox21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Fish"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox20"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox20" />
 
     <CheckBox
         android:id="@+id/checkBox22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:text="Other Seafood"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox21"
-        tools:layout_editor_absoluteX="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox21" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
