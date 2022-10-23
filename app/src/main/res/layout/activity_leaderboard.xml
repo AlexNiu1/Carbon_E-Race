@@ -6,102 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".Leaderboard">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#E0E0E0"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+    <TextView
+        android:id="@+id/fifthplace"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="426dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/homeButton4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_home_24"
-            android:text="Home"
-            android:textAlignment="center"
-            android:textColor="#949494"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:rippleColor="#00FFFFFF" />
+    <TextView
+        android:id="@+id/fourthplace"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="388dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/foodButton4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_fastfood_24"
-            android:text="Food"
-            android:textAlignment="center"
-            android:textColor="#949494"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:rippleColor="#00FFFFFF" />
+    <TextView
+        android:id="@+id/thirdplace"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="356dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/travelButton4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_directions_car_24"
-            android:text="Travel"
-            android:textAlignment="center"
-            android:textColor="#949494"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:rippleColor="#00FFFFFF" />
-
-        <Button
-            android:id="@+id/rankButton4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_leaderboard_24"
-            android:text="rank"
-            android:textAlignment="center"
-            android:textColor="#949494"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:rippleColor="#00FFFFFF" />
-
-        <Button
-            android:id="@+id/settingsButton4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D3D3D3"
-            android:drawableTop="@drawable/ic_baseline_settings_24"
-            android:text="Setting"
-            android:textAlignment="center"
-            android:textColor="#949494"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:rippleColor="#00FFFFFF" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/secondplace"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Current League: None"
-        app:layout_constraintBottom_toTopOf="@+id/leaguename"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="660dp"
+        android:text="League: None"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/createleague"
@@ -183,4 +138,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstplace"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="290dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
