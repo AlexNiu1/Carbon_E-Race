@@ -155,7 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
         android:layout_marginTop="16dp"
-        android:text="We love the environment <3"
+        android:text="We love the environment :)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/about" />
 
