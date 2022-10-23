@@ -22,7 +22,7 @@ public class Food extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityFoodBinding binding;
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,4 +59,6 @@ public class Food extends AppCompatActivity {
             }
         });
     }
+
+ */
 }

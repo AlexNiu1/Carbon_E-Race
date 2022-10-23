@@ -14,6 +14,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
@@ -42,31 +43,34 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("currentday", currentday);
             editor.apply();
         }
-        ImageView homebutton = findViewById(R.id.home);
+
+        Button homebutton = findViewById(R.id.homeButton);
         homebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
-        ImageView foodbutton = findViewById(R.id.food);
+        Button foodbutton = findViewById(R.id.foodButton);
         foodbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
-        ImageView transportationbutton = findViewById(R.id.transportation);
+        Button transportationbutton = findViewById(R.id.transportationButton);
         transportationbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Transportation.class));
             }
         });
-        ImageView boardbutton = findViewById(R.id.leaderboard);
+        Button boardbutton = findViewById(R.id.leaderboardButton);
         boardbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Leaderboard.class));
             }
         });
-        ImageView settingsbutton = findViewById(R.id.settings);
+
+
+        Button settingsbutton = findViewById(R.id.settingsButton);
         settingsbutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Settings.class));
